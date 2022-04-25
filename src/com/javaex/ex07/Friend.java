@@ -7,8 +7,17 @@ public class Friend {
     private String school;
     
     //생성자
+    public Friend() {}
     
-    //메소드 getter/setter 작성
+    public Friend(String name,String hp, String school) {
+    	this.name = name;
+    	this.hp = hp;
+    	this.school = school;
+    }
+   
+  
+
+	//메소드 getter/setter 작성
     public String getName() {
 		return name;
 	}
@@ -39,6 +48,7 @@ public class Friend {
     public void showInfo(){
         System.out.println("이름:"+name+"  핸드폰:"+hp+"  학교:"+school);
     }
+    
 
 	
 }
